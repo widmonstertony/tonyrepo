@@ -11,9 +11,11 @@
   </style>
 </head>
 <body>
-  <h1>VirtualMac Audio Stability Fix 1.0.1</h1>
+  <h1>VirtualMac Audio Stability Fix 1.0.2</h1>
   <p>Preserves VirtualMac microphone input and speaker output while preventing the iPadOS 16.1
     MediaExperience/Now Playing teardown race that can terminate the virtual machine.</p>
+  <p>Version 1.0.2 also reactivates the VMM audio session after media-service interruptions and
+    avoids the rejected Bluetooth route registration loop in the private VirtualMachine process.</p>
   <h2>Compatibility</h2>
   <p>Built for iOS/iPadOS 16 rootless jailbreak environments. It expects VirtualMac's compatibility
     library at its standard installation path.</p>
@@ -25,5 +27,7 @@
   <p>在保留 VirtualMac 麦克风输入和扬声器输出的同时，修复 iPadOS 16.1 中
     MediaExperience/正在播放模块销毁竞态引起的虚拟机崩溃。安装或升级前请关闭 VirtualMac；
     卸载插件时会恢复已备份的原始兼容库。</p>
+  <p>1.0.2 会在媒体服务中断或重置后自动重新激活虚拟机音频会话，并停止私有
+    VirtualMachine 进程中被系统拒绝后不断重试的蓝牙音频注册。</p>
 </body>
 </html>

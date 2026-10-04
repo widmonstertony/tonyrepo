@@ -1,6 +1,6 @@
 Package: com.codex.thermalcontrol
 Name: ThermalLightControl
-Version: 3.5.2
+Version: 3.5.6
 Architecture: iphoneos-arm64
 Description: Prevents thermal brightness caps on iPadOS 16 while preserving CPU/GPU throttling, temperature monitoring, warnings, watchdog, and emergency shutdown.
 Maintainer: widmonstertony
@@ -9,11 +9,11 @@ Section: Tweaks
 Depends: firmware (>= 16.0), firmware (<< 17.0), ellekit (>= 1.2), preferenceloader
 Priority: optional
 Rootless: true
-Filename: debs/com.codex.thermalcontrol_3.5.2_iphoneos-arm64.deb
-Size: 40068
-MD5sum: d61b7b90f0f2d92c3ee751a57f09bf4c
-SHA1: 3279ee41790abd632bc76302a56b281efe446f33
-SHA256: 1b8193760209d8afd46413c1c98548674a1e8c070c78fc159b336f398e1dcf28
+Filename: debs/com.codex.thermalcontrol_3.5.6_iphoneos-arm64.deb
+Size: 42088
+MD5sum: 957d71f1aa5eb587a0df2de8d30334be
+SHA1: 0429406a0cb0cb7ddccea6e5b2b4210adf816f44
+SHA256: aeac33f3a7d8b47f92b0d1bb2e66c6765f67233381715ad7f7aee48a51e7b3f1
 Depiction: https://widmonstertony.github.io/tonyrepo/depictions/thermallight.html
 Homepage: https://widmonstertony.github.io/tonyrepo/
 
@@ -37,19 +37,19 @@ Homepage: https://github.com/nfzerox/VirtualMacOniPad
 
 Package: com.tony.virtualmac.mediaexperiencefix
 Name: VirtualMac Audio Stability Fix
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm64
-Description: Preserves VirtualMac microphone and speaker support while preventing the iPadOS 16.1 MXSystemController teardown race.
+Description: Preserves VirtualMac microphone and speaker support, reactivates audio after media-service interruptions, and prevents the iPadOS 16.1 MXSystemController teardown race.
 Maintainer: Tony
 Author: widmonstertony
 Section: Tweaks
 Depends: firmware (>= 16.0), firmware (<< 17.0), ellekit
 Priority: optional
 Rootless: true
-Filename: debs/com.tony.virtualmac.mediaexperiencefix_1.0.1_iphoneos-arm64.deb
-Size: 47852
-MD5sum: ccbf0094eb867c051bd5f60a6a00ab1f
-SHA1: 49df10be40af59886a90b7d6377a3d2ead017391
-SHA256: 265fe2f352457dbc87277ad6cb3e9bd92edc85c52a62a9cc701dabf30eaa7836
+Filename: debs/com.tony.virtualmac.mediaexperiencefix_1.0.2_iphoneos-arm64.deb
+Size: 48832
+MD5sum: ccfd7fd6ed87e816c2f6cf5e1cea8794
+SHA1: 45146daa096eeaee7e90f4e3060025d6fdfa790e
+SHA256: 4bb7064dd8b7d9d32831d267caa7907e0351ed890bba26b33cf361797224d014
 Depiction: https://widmonstertony.github.io/tonyrepo/depictions/virtualmac-mediaexperiencefix.html
 Homepage: https://widmonstertony.github.io/tonyrepo/
