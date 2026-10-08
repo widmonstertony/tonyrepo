@@ -1,21 +1,21 @@
 Origin: tony
 Label: Tony Repo
 Suite: stable
-Version: 2026.10.4
+Version: 2026.10.7
 Codename: tonyrepo
 Architectures: iphoneos-arm64 all
 Components: main
 Description: Original jailbreak hacks, fixes, tools, and experiments by tony
-Date: Sun, 04 Oct 2026 19:16:24 UTC
+Date: Thu, 08 Oct 2026 04:07:54 UTC
 MD5Sum:
- b6d6fc43730b8b0037707efba581dff9 2506 Packages
- 414552ae5032b6d2dc10fa08218c2521 1128 Packages.gz
- 42084ded4616e724dcc141f3e0aa117e 1253 Packages.bz2
+ 85ce20eded8b0bcc5bc27a0b6f3c0680 2543 Packages
+ af6cdccf7b0be2235e712781f111f75a 1146 Packages.gz
+ 7b4e3d530b7103f7e4b4bc03d2c03866 1283 Packages.bz2
 SHA1:
- e5533e68cb26e0ba094e82ca6c0a8c9fcd91a2fa 2506 Packages
- ff860f8ea915db02d8e26fd3433e54817970411e 1128 Packages.gz
- 2e7b98dcd139a7ce08e2113bc5f40da670ded693 1253 Packages.bz2
+ c854d3b748096102f2a48cd27b92bd6f74ecf529 2543 Packages
+ f3c9537c5d05cb5310d9c5397c132c6c63f3e2b3 1146 Packages.gz
+ cf82026f1f5adfc523fb798b9e1a118cb4d13125 1283 Packages.bz2
 SHA256:
- 6669e20cb07a9abd392e420c71b62f9ebc0dad14d3a02cf811fe340928df8603 2506 Packages
- 56acd5ea897c95eb0b9cd8646916592418e307d15f37547d20b960b3e3b87fd6 1128 Packages.gz
- 5620f02d5b4232199723c6fdab434f594a3c19c7e88fc2c0c23dc7f684bbe3e3 1253 Packages.bz2
+ dbdef3687343f62743a5dfd7cf34b36c05381338bce7cbb7f246fc104fbefe35 2543 Packages
+ b77d7be7a0a06dd9d4232bfa48b62be4d449395855758ede7ba9b6e3abeff817 1146 Packages.gz
+ 37b4e903a94654317e3bbb0970500064743370a50d1dd6051d0f068071dacff5 1283 Packages.bz2
