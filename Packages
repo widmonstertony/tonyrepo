@@ -78,24 +78,19 @@ Homepage: https://widmonstertony.github.io/tonyrepo/
 
 Package: com.codex.clashstability
 Name: Clash Stability
-Version: 1.0.39
+Version: 1.0.40
 Architecture: iphoneos-arm64
-Section: Tweaks
-Priority: optional
 Maintainer: widmonstertony
 Author: widmonstertony
-Installed-Size: 368
+Section: Tweaks
 Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate
-Rootless: true
-Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability.html
-Homepage: https://widmonstertony.github.io/tonyrepo/
 Conflicts: com.codex.clashid16refresh
 Replaces: com.codex.clashid16refresh
-Description: Dopamine compatibility for Clash of Clans 18.600.7
- Verified on iPad14,6 with iPadOS 16.1 and Dopamine 3.0.10.
- Includes baseline diagnostic logging. Allow ClashTraceDiagnostic in Choicy.
-Filename: debs/com.codex.clashstability_1.0.39_iphoneos-arm64.deb
-Size: 129156
-MD5sum: 421af17c168da8821869e74aa06ceae1
-SHA1: c6896cefe802281fee025620c8b10281a3a6fc9c
-SHA256: 6bf1d81e0a7a1e57a484713081729511d30dc6652b369ddcf22e9f3fd8c76077
+Rootless: true
+Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability.html
+Description: C-source compatibility for CoC 18.600.7 on verified iPadOS 16.1 / Dopamine 3.0.10; bounded background dyld refresh and rollback.
+Filename: debs/com.codex.clashstability_1.0.40_iphoneos-arm64.deb
+Size: 49260
+MD5sum: b3f6d97b392e33e6aac9e19607037e79
+SHA1: 06542156101528d3fe6bb3e039efe971ff5173e8
+SHA256: ec4141050f8ab115ae40b9ea873978e31f41a4fbce8da6a30a6bbc05f0d88c02
