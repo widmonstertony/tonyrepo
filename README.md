@@ -18,6 +18,7 @@ Add the URL to Sileo or Zebra and refresh sources.
 
 ## Packages
 
+- **Clash Stability 1.0.39** — Dopamine compatibility for Clash of Clans 18.600.7, verified on iPad14,6 / iPadOS 16.1 / Dopamine 3.0.10. Close and reopen the game after installation; allow **ClashTraceDiagnostic** if Choicy uses a custom allowlist. This version retains baseline diagnostic logging.
 - **ThermalLightControl 3.7.1** — one universal arm64/arm64e package for iPadOS 16–17. It covers the CoreBrightness, CoreAnimation, EDR, notification, and per-frame RTPLC paths that can force SDR output down in games, while preserving CPU/GPU throttling, temperature monitoring, warnings, watchdog, and emergency shutdown.
 - **VirtualMac Audio Stability Fix 1.0.2** — preserves VirtualMac microphone and speaker support, reactivates audio after media-service interruptions, and prevents the iPadOS 16.1 MediaExperience/Now Playing teardown race.
 - **Virtual Mac 1.2.3+609.pause2** — a modified build of the upstream MIT-licensed project with native in-memory Pause/Resume controls and a startup menu-refresh fix. Supported only on the upstream-compatible M1/M2 iPads running iPadOS 14.5–16.3.1.
@@ -74,6 +75,7 @@ Sileo 或 Zebra 后刷新软件源即可；其他软件包仍以各自说明的�
 [一键添加到 Zebra](zbra://sources/add/https://widmonstertony.github.io/tonyrepo/) ·
 [打开软件源页面](https://widmonstertony.github.io/tonyrepo/)
 
+- **Clash Stability 1.0.39**：针对 Clash of Clans 18.600.7 的 Dopamine 兼容插件，已验证 iPad14,6 / iPadOS 16.1 / Dopamine 3.0.10。安装后重开游戏；Choicy 自定义允许列表须允许 **ClashTraceDiagnostic**。本版保留基线诊断日志。
 - **ThermalLightControl 3.7.1**：同一个 arm64/arm64e 通用安装包支持 iPadOS 16–17，覆盖游戏可能触发的 CoreBrightness、CoreAnimation、EDR、通知直达与逐帧 RTPLC 降亮路径，同时保留 CPU/GPU 降频、温度监控、过热警告、watchdog 和紧急关机保护。
 - **VirtualMac Audio Stability Fix 1.0.2**：保留 VirtualMac 的麦克风与扬声器功能，在媒体服务中断后自动恢复音频，并修复 iPadOS 16.1 上 MediaExperience/正在播放模块销毁时的竞态崩溃。
 - **Virtual Mac 1.2.3+609.pause2**：基于上游 MIT 开源项目的修改版，加入原生内存暂停/恢复以及虚拟机启动后自动刷新菜单的修复。仅支持上游兼容的 M1/M2 iPad 与 iPadOS 14.5–16.3.1。
