@@ -94,3 +94,22 @@ Size: 49260
 MD5sum: b3f6d97b392e33e6aac9e19607037e79
 SHA1: 06542156101528d3fe6bb3e039efe971ff5173e8
 SHA256: ec4141050f8ab115ae40b9ea873978e31f41a4fbce8da6a30a6bbc05f0d88c02
+
+Package: com.codex.clashstability17
+Name: Clash Stability iOS 17
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: widmonstertony
+Author: widmonstertony
+Section: Tweaks
+Depends: firmware (>= 17.0), firmware (<< 18.0), mobilesubstrate
+Conflicts: com.codex.clashstability, com.codex.clashid16refresh
+Replaces: com.codex.clashstability, com.codex.clashid16refresh
+Rootless: true
+Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability-ios17.html
+Description: C-source compatibility for CoC 18.600.7 on verified iPad7,2 / iPadOS 17.7.11 (21H461), Dopamine 3.0.10 and Procursus OpenSSH 9.7p1; bounded refresh and rollback.
+Filename: debs/com.codex.clashstability17_1.0.0_iphoneos-arm64.deb
+Size: 51134
+MD5sum: 1bf40e52ca9d369caa1141173fab25df
+SHA1: a6351c418e553d5494dbae6c4d13ce11057f8359
+SHA256: 299e69a3a0dd4ff17d03a004c202c1f5fc1df5484890551a4b3ab4106755e01f
