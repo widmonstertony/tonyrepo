@@ -1,37 +1,7 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Clash Stability</title>
-  <style>
-    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
-    body { margin: 0; padding: 18px; line-height: 1.5; }
-    .note { border-left: 4px solid #316dca; padding-left: 12px; }
-  </style>
-</head>
-<body>
-  <h1>Clash Stability 1.0.40</h1>
-  <p>Dopamine compatibility for Clash of Clans 18.600.7. Handles the repeated background
-    environment check after the game rebuilds its private snapshot.</p>
-  <h2>Compatibility</h2>
-  <p>Verified on iPad14,6 with iPadOS 16.1 and Dopamine 3.0.10. Other game and system
-    versions have not been validated. The runtime is compiled entirely from C source and uses
-    generation-bound snapshot refresh and rollback.</p>
-  <p class="note"><strong>Installation:</strong> close the game, install the package, then reopen it.
-    If Choicy uses a custom allowlist, allow <strong>ClashTraceDiagnostic</strong>.
-    Version 1.0.40 upgrades earlier Clash Stability releases and replaces the experimental
-    Clash ID16 Refresh Diagnostic package. No automatic respring is required.</p>
-  <p>Uninstall through the package manager and restart the game to remove this tweak.</p>
-  <hr>
-  <h2>中文说明</h2>
-  <p>针对 Clash of Clans 18.600.7 的 Dopamine 兼容插件，处理游戏重建私有快照后
-    再次进行后台环境检查引起的退出。已验证 iPad14,6、iPadOS 16.1、Dopamine 3.0.10；
-    其他系统或游戏版本尚未验证。本版运行库完全由 C 源码独立编译，
-    包含当前快照所有权核验、受约束刷新与回滚。</p>
-  <p>安装前退出游戏，安装后重新打开。如在 Choicy 使用自定义允许列表，请允许
-    <strong>ClashTraceDiagnostic</strong>。1.0.40 可升级旧 Clash Stability 版本，
-    并替换实验性的 Clash ID16 Refresh Diagnostic 包，无需自动重启 SpringBoard。
-    在包管理器中卸载后重开游戏即可移除插件。</p>
-</body>
-</html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Clash Stability</title><style>:root{color-scheme:light dark;font-family:-apple-system,BlinkMacSystemFont,sans-serif}body{margin:0;padding:18px;line-height:1.5}table{border-collapse:collapse}th,td{padding:8px;border:1px solid #888}.note{border-left:4px solid #316dca;padding-left:12px}</style></head><body>
+<h1>Clash Stability 1.0.41</h1><p>一个安装包，自动识别设备和系统，选择对应的 CoC 兼容逻辑。两个配置均为独立编译的 C 源码，并保留各自的页面摘要、dyld 身份与恢复状态。</p>
+<h2>已验证组合</h2><table><tr><th>设备</th><th>系统</th><th>构建号</th></tr><tr><td>iPad14,6</td><td>iPadOS 16.1</td><td>20B82</td></tr><tr><td>iPad7,2</td><td>iPadOS 17.7.11</td><td>21H461</td></tr></table><p>要求 Clash of Clans 18.600.7 和各自已核验的 Dopamine 3.0.10 环境。其他硬件或系统构建不启用适配。</p>
+<p class="note">安装前退出游戏，安装后重开。1.0.41 升级原 Clash Stability，并自动替换旧 Clash Stability iOS 17 和 ID16 测试包。Choicy 如使用自定义允许列表，请允许 <strong>ClashTraceDiagnostic</strong>。无需重启 SpringBoard。</p>
+<p>包含当前快照核验、受约束刷新和回滚；卸载后重新启动游戏即可移除注入。安装过程不修改 Choicy 或 SSH 配置。完整源码保存在 private 仓库。</p>
+<hr><h2>English</h2><p>One C-source runtime automatically selects the verified iPad14,6 / iPadOS 16.1 (20B82) or iPad7,2 / iPadOS 17.7.11 (21H461) profile for CoC 18.600.7 and the pinned Dopamine 3.0.10 environment. Unsupported device/build combinations remain inactive.</p><p>Close the game, install, then reopen. This package upgrades Clash Stability and replaces the separate iOS 17 package. Allow <strong>ClashTraceDiagnostic</strong> in a custom Choicy allowlist. Uninstall and restart the game to remove the tweak.</p></body></html>
