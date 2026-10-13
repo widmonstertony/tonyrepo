@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-13",
+  "device_model": "iPad14,6",
+  "os": "iPadOS 16.1 (20B82)",
+  "dopamine": "3.0.11",
+  "coc": "18.647.2",
+  "plugin": "1.0.57",
+  "village_visually_verified": true,
+  "kill_and_relaunch_village_visually_verified": true,
+  "same_process_alive_after_relaunch_seconds": 180,
+  "reboot_required": false,
+  "springboard_restart_required": false,
+  "jailbreak_exit_required": false,
+  "game_data_deleted": false,
+  "diagnostic_observers_in_release": false,
+  "scope": "Exact tested profile only; not an indefinite stability guarantee."
+}

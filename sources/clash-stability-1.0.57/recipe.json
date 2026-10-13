@@ -1,0 +1,225 @@
+{
+  "version": "1.0.57",
+  "baseline_sha256": "f012cd05968b9d5b47ecc03507deda28b2f46c5cbb20dccd37ac394b2a45ac2f",
+  "magicx_sha256": "fa671b9db1e29f318e4ce5918cb300506a1458a69cfbc70b55fbe13bad1d582d",
+  "systemhook_arm64e_sha256": "c6fd08f4b93f613a7e53f860b09793517bb6e628cc9905345afbebd6b577c7f3",
+  "systemhook_file_sha256": "b4e9e7d352e53bf7e91ce8c56f985612f2606b993e1ef3a02a3b4e4f765285c5",
+  "dyld_sha256": "4c5df2d35feb85398d71dbdc62a8ccb5dc479af1993cac8bb555998677317f25",
+  "from_version": "18.600.7",
+  "to_version": "18.647.2",
+  "string_offsets": [
+    169290,
+    169459,
+    173651,
+    177441
+  ],
+  "instruction_updates": [
+    {
+      "offset": 39948,
+      "before": "0x5290b988",
+      "after": "0x5290d908"
+    },
+    {
+      "offset": 44380,
+      "before": "0xd29d14ab",
+      "after": "0xd29b7eab"
+    },
+    {
+      "offset": 44384,
+      "before": "0xf2a9b02b",
+      "after": "0xf2bb11ab"
+    },
+    {
+      "offset": 44388,
+      "before": "0xf2d8938b",
+      "after": "0xf2ce706b"
+    },
+    {
+      "offset": 44392,
+      "before": "0xf2f7262b",
+      "after": "0xf2e5c7cb"
+    },
+    {
+      "offset": 44400,
+      "before": "0xd29f16e9",
+      "after": "0xd288f6e9"
+    },
+    {
+      "offset": 44404,
+      "before": "0xf2b82ae9",
+      "after": "0xf2b46809"
+    },
+    {
+      "offset": 44408,
+      "before": "0xf2df07e9",
+      "after": "0xf2ca2469"
+    },
+    {
+      "offset": 44412,
+      "before": "0xf2e007c9",
+      "after": "0xf2f30109"
+    },
+    {
+      "offset": 61760,
+      "before": "0xd29d14ab",
+      "after": "0xd29b7eab"
+    },
+    {
+      "offset": 61764,
+      "before": "0xf2a9b02b",
+      "after": "0xf2bb11ab"
+    },
+    {
+      "offset": 61768,
+      "before": "0xf2d8938b",
+      "after": "0xf2ce706b"
+    },
+    {
+      "offset": 61772,
+      "before": "0xf2f7262b",
+      "after": "0xf2e5c7cb"
+    },
+    {
+      "offset": 61556,
+      "before": "0xd29f16fb",
+      "after": "0xd288f6fb"
+    },
+    {
+      "offset": 61560,
+      "before": "0xf2b82afb",
+      "after": "0xf2b4681b"
+    },
+    {
+      "offset": 61564,
+      "before": "0xf2df07fb",
+      "after": "0xf2ca247b"
+    },
+    {
+      "offset": 61568,
+      "before": "0xf2e007db",
+      "after": "0xf2f3011b"
+    },
+    {
+      "offset": 74280,
+      "before": "0xa94d27e8",
+      "after": "0x52800028"
+    },
+    {
+      "offset": 74284,
+      "before": "0xa94e2fea",
+      "after": "0x17ffffe3"
+    },
+    {
+      "offset": 79876,
+      "before": "0x5291f617",
+      "after": "0x5291f817"
+    },
+    {
+      "offset": 79900,
+      "before": "0x5291f600",
+      "after": "0x5291f800"
+    },
+    {
+      "offset": 80120,
+      "before": "0xd29ddb2c",
+      "after": "0xd29d368c"
+    },
+    {
+      "offset": 80124,
+      "before": "0xf2b1d42c",
+      "after": "0xf2ba7cec"
+    },
+    {
+      "offset": 80128,
+      "before": "0xf2c3e5cc",
+      "after": "0xf2dcaa4c"
+    },
+    {
+      "offset": 80132,
+      "before": "0xf2e071ac",
+      "after": "0xf2fee76c"
+    },
+    {
+      "offset": 80140,
+      "before": "0xd28cb1e8",
+      "after": "0xd2839d28"
+    },
+    {
+      "offset": 80144,
+      "before": "0xf2a7eea8",
+      "after": "0xf2b8bd08"
+    },
+    {
+      "offset": 80148,
+      "before": "0xf2c01068",
+      "after": "0xf2d30de8"
+    },
+    {
+      "offset": 80152,
+      "before": "0xf2e20668",
+      "after": "0xf2e24ac8"
+    },
+    {
+      "offset": 80160,
+      "before": "0xd294ea48",
+      "after": "0xd28c1e48"
+    },
+    {
+      "offset": 80164,
+      "before": "0xf2ab14a8",
+      "after": "0xf2b32d68"
+    },
+    {
+      "offset": 80168,
+      "before": "0xf2c17ea8",
+      "after": "0xf2c3c7c8"
+    },
+    {
+      "offset": 80172,
+      "before": "0xf2e33508",
+      "after": "0xf2f41e68"
+    },
+    {
+      "offset": 80180,
+      "before": "0xd297f0e8",
+      "after": "0xd2876548"
+    },
+    {
+      "offset": 80184,
+      "before": "0xf2a95b08",
+      "after": "0xf2a9e9c8"
+    },
+    {
+      "offset": 80188,
+      "before": "0xf2cf62a8",
+      "after": "0xf2ca4ec8"
+    },
+    {
+      "offset": 80192,
+      "before": "0xf2feacc8",
+      "after": "0xf2f8b0a8"
+    },
+    {
+      "offset": 69228,
+      "before": "0x52800c4d",
+      "after": "0x52800e4d"
+    },
+    {
+      "offset": 70144,
+      "before": "0x71000d1f",
+      "after": "0x7100111f"
+    },
+    {
+      "offset": 70172,
+      "before": "0x7101891f",
+      "after": "0x7101c91f"
+    },
+    {
+      "offset": 69760,
+      "before": "0xf90017e8",
+      "after": "0x17ffcbe0"
+    }
+  ],
+  "release_payload_sha256": "fb74a941e9d6d2ef44d422e89a30a74ac9e75656ebf8a9c5c66b9a72545ccf07",
+  "release_package_sha256": "ee2ab013252d0fae3f03ebabe7e3de56cbcc08ac5586dd7501c115039fb278c6"
+}

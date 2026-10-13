@@ -94,3 +94,24 @@ Size: 88248
 MD5sum: ed55fa72c895cbe7bd7a4927566a8ba7
 SHA1: 5ef3343919ba321fa8f9a1cde16f7c4de79b1076
 SHA256: a3dbc4fa5e90a681af420d0eeb5dd22ff07d51ce16a33190579ab03ed6b9c723
+
+Package: com.codex.clashstability
+Name: Clash Stability
+Version: 1.0.57
+Architecture: iphoneos-arm64
+Maintainer: widmonstertony
+Author: widmonstertony
+Section: Tweaks
+Priority: optional
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate
+Replaces: com.codex.clashstability17, com.codex.clashid16refresh
+Conflicts: com.codex.clashstability17, com.codex.clashid16refresh
+Description: CoC 18.647.2 compatibility adapter for the exact verified iPadOS16.1/Dopamine3.0.11 profile. Corrects own-image worker snapshot filtering with exact identity/path and complete-set checks. No forced success, signal suppression, system daemon hooks, or reboot scripts.
+Rootless: true
+Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability.html
+Homepage: https://widmonstertony.github.io/tonyrepo/
+Filename: debs/com.codex.clashstability_1.0.57_iphoneos-arm64.deb
+Size: 88136
+MD5sum: 0ee3ff6ef89577e5ca7515b61070600b
+SHA1: f4fe1364c6ea1d0ad6ac4745cc5b501d58e71ee3
+SHA256: ee2ab013252d0fae3f03ebabe7e3de56cbcc08ac5586dd7501c115039fb278c6

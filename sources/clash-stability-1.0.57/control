@@ -1,0 +1,13 @@
+Package: com.codex.clashstability
+Name: Clash Stability
+Version: 1.0.57
+Architecture: iphoneos-arm64
+Maintainer: widmonstertony
+Author: widmonstertony
+Section: Tweaks
+Priority: optional
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate
+Replaces: com.codex.clashstability17, com.codex.clashid16refresh
+Conflicts: com.codex.clashstability17, com.codex.clashid16refresh
+Description: CoC 18.647.2 compatibility adapter for the exact verified iPadOS16.1/Dopamine3.0.11 profile. Corrects own-image worker snapshot filtering with exact identity/path and complete-set checks. No forced success, signal suppression, system daemon hooks, or reboot scripts.
+Rootless: true

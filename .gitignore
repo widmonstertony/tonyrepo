@@ -3,3 +3,5 @@ tools/newt66y-local-builder/output/
 tools/newt66y-local-builder/*.ipa
 tools/newt66y-local-builder/*.deb
 dist/
+sources/clash-stability-1.0.57/build/
+sources/clash-stability-1.0.57/__pycache__/
