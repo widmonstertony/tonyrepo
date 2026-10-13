@@ -78,6 +78,7 @@ def main():
     assert len(result) == len(baseline)
     assert result[0x4000:0x4050] == baseline[0x4000:0x4050], 'Own-image selector changed'
     assert result[0x27200:0x2c000] == baseline[0x27200:0x2c000], 'Original profile changed'
+    args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_bytes(result)
     subprocess.run(['codesign', '-f', '-s', '-', str(args.output)], check=True)
     signed = args.output.read_bytes()

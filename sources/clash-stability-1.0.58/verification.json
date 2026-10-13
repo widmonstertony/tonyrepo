@@ -5,6 +5,7 @@
   "same_size_magicx_copy_with_one_byte_changed": "refused",
   "real_game_files_modified": false,
   "runtime_version_gate_replaced_at_three_sites_only": true,
+  "published_source_reproduces_runtime_gate_and_original_text": true,
   "village_visually_verified": true,
   "kill_and_relaunch_village_visually_verified": true,
   "relaunch_process_alive_after_return_to_virtual_mac_seconds": 199,

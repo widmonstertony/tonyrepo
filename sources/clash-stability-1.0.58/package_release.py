@@ -55,5 +55,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.output.exists():
         raise ValueError('Output already exists; refusing overwrite')
+    args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_bytes(make_deb(args.payload.read_bytes()))
     print(args.output, hashlib.sha256(args.output.read_bytes()).hexdigest())
