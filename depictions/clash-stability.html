@@ -4,37 +4,43 @@
 <title>Clash Stability</title>
 <style>:root{color-scheme:light dark;font-family:-apple-system,BlinkMacSystemFont,sans-serif}body{max-width:760px;margin:auto;padding:18px;line-height:1.6}.note{border-left:4px solid #316dca;padding-left:12px}code{overflow-wrap:anywhere}</style>
 </head><body>
-<h1>Clash Stability 1.0.57</h1>
+<h1>Clash Stability 1.0.58</h1>
 <p>修复当前已验证组合：<strong>CoC 18.647.2、iPad14,6、iPadOS 16.1 (20B82)、Dopamine 3.0.11</strong>。
 这个新版不宣称支持其他系统或 iOS 17。保留旧版 1.0.41 APT 条目供原兼容组合使用。</p>
 <h2>安装与验收</h2>
 <p class="note">退出 CoC，更新插件，再打开游戏。Choicy 自定义允许列表需允许
 <strong>ClashTraceDiagnostic</strong>。DEB 没有重启或 respring 安装脚本；不需要退出越狱、
 清除游戏数据或重启设备。卸载后重新打开游戏即可移除注入。</p>
-<p>已实际进入村庄，结束游戏后重新进入村庄，同一进程观察存活至三分钟。
+<p>已实际进入村庄，结束游戏后重新进入村庄，返回虚拟 Mac 后同一进程观察存活至三分十九秒。
 此为当前组合的验收，不是永久稳定性或未来所有版本兼容的保证。</p>
 <h2>此次修复与代码</h2>
 <p>更新精确越狱环境指纹，并补全工作线程快照对插件自身图像的精确过滤集合；
 保留身份、路径、UUID、调用位置和快照一致性校验。没有强制检查成功、屏蔽致命信号、
 全局修改 dyld 图像列表或钩住系统守护进程。正式包不含临时诊断观察器。</p>
-<p><a href="https://github.com/widmonstertony/tonyrepo/tree/main/sources/clash-stability-1.0.57">对应适配代码、逐条修改清单和验收记录</a>。
-完整原始 C 源码本次未找回，提供的是受校验二进制适配代码，不冒充完整源码。</p>
-<p><a href="../debs/com.codex.clashstability_1.0.57_iphoneos-arm64.deb">下载正式 1.0.57 DEB</a>。</p>
+<p><a href="https://github.com/widmonstertony/tonyrepo/tree/main/sources/clash-stability-1.0.58">新增 C 指纹函数、适配代码和验收记录</a>。
+完整旧 C 源码仍未找回；新增函数在已验证 1.0.57 基础上接入三个启动入口。</p>
+<p><a href="../debs/com.codex.clashstability_1.0.58_iphoneos-arm64.deb">下载正式 1.0.58 DEB</a> ·
+<a href="../debs/com.codex.clashstability_1.0.57_iphoneos-arm64.deb">1.0.57 回退包（未改动）</a>。</p>
 <h2>以后更新游戏</h2>
-<p>当前仍有精确版本号校验。仅版本号变化且防护模块与越狱指纹不变时，可以小范围适配再验收；
-模块或越狱环境变动仍需新配置。“按指纹自动兼容未来版本”尚未实现，不能保证永远无需更新插件。</p>
+<p>1.0.58 已用完整文件指纹取代三个版本号比较：已知 magicx 防护文件、systemhook 和生成的 dyld
+完全不变时，不再仅因 CoC 版本号变化拒绝加载。文件变了、读取失败或环境不匹配则拒绝启用，
+不猜偏移、不强制成功。其他原有身份和一致性校验保留。独立实机测试已确认：已知文件通过，
+同大小但改了一个字节的副本被拒绝；真实游戏文件未修改。</p>
+<p>尚未测试未来实际游戏版本；其他游戏代码变化仍可能引入不同问题，不能保证所有更新都无需适配。</p>
 <h2>旧版 1.0.41</h2>
 <p>原验证组合为 CoC 18.600.7 / Dopamine 3.0.10，以及 iPad14,6 / iPadOS 16.1 (20B82)
 或 iPad7,2 / iPadOS 17.7.11 (21H461)。新版 1.0.57 的结果不能视为旧 iOS 17 组合的重新验收。</p>
 <hr><h2>English</h2>
-<p>1.0.57 is verified only with CoC 18.647.2, iPad14,6, iPadOS 16.1 (20B82), Dopamine 3.0.11.
+<p>1.0.58 is regression-tested with CoC 18.647.2, iPad14,6, iPadOS 16.1 (20B82), Dopamine 3.0.11.
 It refreshes exact environment fingerprints and corrects qualified own-image worker snapshot filtering.
 No forced success, signal suppression, global dyld-list edits or system-daemon hooks are added.</p>
 <p>Close CoC, install, reopen. Allow <strong>ClashTraceDiagnostic</strong> in a custom Choicy allowlist.
 No reboot/respring scripts are included. Village entry and relaunch were visually verified;
-the same process was observed alive at three minutes, not tested indefinitely.</p>
-<p>The repository includes adaptation source and a checked instruction recipe, not the unavailable full original C source.
-The exact app-version gate remains. Future protection or jailbreak changes may require a new profile;
-automatic fingerprint-based future-version support has not been shipped.
-The legacy 1.0.41 APT entry remains available for its original configurations.</p>
+the same process was observed alive at 199 seconds after returning to Virtual Mac, not tested indefinitely.</p>
+<p>The new original C runtime gate checks full known protection/jailbreak file fingerprints instead of the app-version number
+at three call sites. Changed or unreadable files are refused. Known files passed a standalone device check;
+a same-size one-byte-altered copy was refused. Real game files were not modified.</p>
+<p>No future real game version was tested. Other game changes can still break compatibility.
+The full legacy C implementation remains unavailable. The unmodified 1.0.57 rollback package
+and legacy 1.0.41 APT entry stay available.</p>
 </body></html>

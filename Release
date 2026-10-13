@@ -6,16 +6,16 @@ Codename: tonyrepo
 Architectures: iphoneos-arm64 all
 Components: main
 Description: Original jailbreak hacks, fixes, tools, and experiments by tony
-Date: Tue, 13 Oct 2026 20:13:49 +0000
+Date: Tue, 13 Oct 2026 21:02:41 +0000
 MD5Sum:
- 8064e8e266c8de71ab3404fb15834912 5524 Packages
- d6fafd5e23cf3abf9500a19540a97bad 2159 Packages.gz
- f93a261a5fdc7c62d91290a402b0ed7c 2292 Packages.bz2
+ cfea54a5617c3742d078395beb1f2373 6586 Packages
+ 121fd180dc2bf75657950f3474d72976 2390 Packages.gz
+ 8f03a61f25c30b8b90b4d9d9780bf860 2529 Packages.bz2
 SHA1:
- c2059a3ca7dc9d050fb03c28aab0c26f375abc0d 5524 Packages
- 780be24649931c0dfe4f48c8d257e667bb9c2acf 2159 Packages.gz
- c1d5e0b6b0d34d22633439baf549695b77f9e0c9 2292 Packages.bz2
+ a1974314951fe5f19765cbb22533362ce1e70843 6586 Packages
+ a80b382cbd13e06af303eeef713b147b770f9e14 2390 Packages.gz
+ 1866f224adc85634cf0ae95593b519ff328024a4 2529 Packages.bz2
 SHA256:
- 3efcda2812e836b1514ef7069cd85748c0af3f81dc022263edbfe8e6d6a44fdd 5524 Packages
- 68b47c7dbe224a41207c38544537c12e3d42327e6bc635af054fc7a65acae8da 2159 Packages.gz
- eea7f254ebfd8c02a7625c78931803721f84834c1169a030a43954cf719b831e 2292 Packages.bz2
+ cee32a607a1138a6cf3ae228ed6fcba43706df4c7687bf341a6a841b6d6d45ef 6586 Packages
+ d1da5bb11a75c2abd82021ed506416ba2692490aaeab46da04e0025bb562e8ec 2390 Packages.gz
+ 8463825ff411f335ad7a0e06ca2d66e23ef3c249f83824879067b1194048d2d7 2529 Packages.bz2

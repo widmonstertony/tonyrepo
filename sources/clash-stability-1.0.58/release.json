@@ -1,0 +1,13 @@
+{
+  "version": "1.0.58",
+  "base_release_version": "1.0.57",
+  "base_payload_sha256": "fb74a941e9d6d2ef44d422e89a30a74ac9e75656ebf8a9c5c66b9a72545ccf07",
+  "payload_sha256": "d9dbc5299c92274bc6160ef1666678843d06ee24bf783a6344d97e4ec01a634f",
+  "package_sha256": "3ad5ead8cf8b9aa0bb491e5e8509b1e65bda5ca9bfd26b42b1e2c88cf616d110",
+  "gate_offset": 16640,
+  "version_call_sites": [39420, 57600, 85092],
+  "magicx_sha256": "fa671b9db1e29f318e4ce5918cb300506a1458a69cfbc70b55fbe13bad1d582d",
+  "systemhook_file_sha256": "b4e9e7d352e53bf7e91ce8c56f985612f2606b993e1ef3a02a3b4e4f765285c5",
+  "dyld_file_sha256": "4c5df2d35feb85398d71dbdc62a8ccb5dc479af1993cac8bb555998677317f25",
+  "unknown_fingerprints": "refuse; no offset guessing or forced success"
+}

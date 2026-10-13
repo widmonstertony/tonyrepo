@@ -115,3 +115,24 @@ Size: 88136
 MD5sum: 0ee3ff6ef89577e5ca7515b61070600b
 SHA1: f4fe1364c6ea1d0ad6ac4745cc5b501d58e71ee3
 SHA256: ee2ab013252d0fae3f03ebabe7e3de56cbcc08ac5586dd7501c115039fb278c6
+
+Package: com.codex.clashstability
+Name: Clash Stability
+Version: 1.0.58
+Architecture: iphoneos-arm64
+Maintainer: widmonstertony
+Author: widmonstertony
+Section: Tweaks
+Priority: optional
+Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate
+Replaces: com.codex.clashstability17, com.codex.clashid16refresh
+Conflicts: com.codex.clashstability17, com.codex.clashid16refresh
+Description: Fingerprint-based CoC compatibility on the verified iPadOS16.1/Dopamine3.0.11 profile. Allows version-number changes only when complete protection and jailbreak file fingerprints match. Preserves existing identity, caller, snapshot and readiness checks. No restart scripts.
+Rootless: true
+Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability.html
+Homepage: https://widmonstertony.github.io/tonyrepo/
+Filename: debs/com.codex.clashstability_1.0.58_iphoneos-arm64.deb
+Size: 89110
+MD5sum: fc70e752e3aa86950a93d948f3914fca
+SHA1: f9b6647aa39f73224533889fc67075a30e4e1c95
+SHA256: 3ad5ead8cf8b9aa0bb491e5e8509b1e65bda5ca9bfd26b42b1e2c88cf616d110

@@ -5,3 +5,6 @@ tools/newt66y-local-builder/*.deb
 dist/
 sources/clash-stability-1.0.57/build/
 sources/clash-stability-1.0.57/__pycache__/
+sources/clash-stability-1.0.58/build/
+sources/clash-stability-1.0.58/__pycache__/
+sources/clash-stability-1.0.58/gate_payload.dylib
