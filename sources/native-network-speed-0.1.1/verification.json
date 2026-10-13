@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-13",
+  "device": "iPad14,6",
+  "os": "16.1",
+  "build": "20B82",
+  "architectures": ["arm64", "arm64e"],
+  "package_path": "debs/com.tony.netstatus_0.1.1_iphoneos-arm64.deb",
+  "package_sha256": "a3af627b5513883f6798bbbde8b4d0a30e661d2c6703608fd05f0d16d24d7ebb",
+  "payload_sha256": "b7444c5f68a7dde89324d9e86ce9f9c90c936273f0beabea18db5040a279834b",
+  "native_display_confirmed_by_user_after_respring": true,
+  "diagnostic_event": "sampling",
+  "native_class": "_UIStatusBarForegroundView",
+  "visible_label_count": 2,
+  "sample_text": "↓22K ↑2K",
+  "separate_window_created": false,
+  "game_injection": false,
+  "release_payload_changed": false,
+  "failed_or_diagnostic_packages_published": false
+}

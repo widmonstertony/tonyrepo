@@ -1,1 +1,8 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Clash Stability 合并版</title></head><body><h1>已合并到 Clash Stability 1.0.41</h1><p>原 iOS 17 独立包已合并。请安装 <a href="clash-stability.html">Clash Stability</a>，由插件自动识别已验证的设备和系统；升级会自动替换旧 iOS 17 包。</p></body></html>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Clash Stability iPadOS 17</title><style>body{font-family:system-ui;max-width:760px;margin:36px auto;padding:0 20px;line-height:1.6}</style></head><body>
+<h1>Clash Stability iPadOS 17 1.1.0</h1>
+<p>已验证：iPad7,2 / iPadOS 17.7.11 (21H461) / 已知 Dopamine 3.0.10 文件组合 / CoC 18.647.2。进入村庄与重启 SpringBoard 后重开均通过。</p>
+<p>独立于 <a href="clash-stability.html">iPadOS 16 的 1.0.58 包</a>。两包互斥，由 Sileo/Zebra 提示移除旧合并包，避免同时注入。安装后只需重开 CoC；包内无重启脚本。Choicy 允许列表需允许 ClashTraceDiagnostic。</p>
+<p>新增完整文件指纹检查：文件相同才允许版本号变化；文件发生变化则拒绝启用。精确修正自身 kind-4 image 的 worker 快照识别，保留身份、UUID、路径、完整数量和位图检查，不伪造成功、不屏蔽崩溃。</p>
+<p>完整历史 C 源码仍未找回。仓库提供新增 C 指纹函数、固定基线适配代码、打包程序与验收记录。不能保证未来所有 CoC 更新或账号安全。</p>
+<h2>English</h2><p>Qualified iPad7,2 / iPadOS17.7.11 / known Dopamine3.0.10 binary profile only. CoC18.647.2 village launch and post-respring relaunch verified. Separate from the unchanged iOS16 release. Exact file fingerprints and own-image snapshot identity checks; unknown profiles fail closed. No game/system binaries or failed test packages are distributed.</p>
+<p><a href="https://github.com/widmonstertony/tonyrepo/tree/main/sources/clash-stability-ios17-1.1.0">Source / 代码与验收记录</a> · <a href="../">Tony Repo</a></p></body></html>

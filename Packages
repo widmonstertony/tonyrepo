@@ -136,3 +136,42 @@ Size: 89110
 MD5sum: fc70e752e3aa86950a93d948f3914fca
 SHA1: f9b6647aa39f73224533889fc67075a30e4e1c95
 SHA256: 3ad5ead8cf8b9aa0bb491e5e8509b1e65bda5ca9bfd26b42b1e2c88cf616d110
+
+Package: com.codex.clashstability17
+Name: Clash Stability iPadOS 17
+Version: 1.1.0
+Architecture: iphoneos-arm64
+Maintainer: widmonstertony
+Author: widmonstertony
+Section: Tweaks
+Priority: optional
+Depends: firmware (>= 17.7.11), firmware (<< 17.7.12), mobilesubstrate
+Conflicts: com.codex.clashstability, com.codex.clashid16refresh
+Replaces: com.codex.clashstability, com.codex.clashid16refresh
+Description: Isolated fingerprint gate for iPad7,2 iPadOS17.7.11 and the known Dopamine3.0.10 file profile. No forced-success checks, system hooks or restart scripts. Unrecognized binaries fail closed.
+Rootless: true
+Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability-ios17.html
+Homepage: https://widmonstertony.github.io/tonyrepo/
+Filename: debs/com.codex.clashstability17_1.1.0_iphoneos-arm64.deb
+Size: 89020
+MD5sum: afe91e9e83774e9200894eb6812e7884
+SHA1: 37d243aba762f1158d75675bafdb2a769b183064
+SHA256: fe4712c49c21f6ef8abc23af3059dd6053b795cc588df52e196f92ef961d081b
+
+Package: com.tony.netstatus
+Name: Tony Native Network Speed
+Version: 0.1.1
+Architecture: iphoneos-arm64
+Maintainer: widmonstertony
+Author: widmonstertony
+Section: Tweaks
+Depends: firmware (>= 16.1), firmware (<< 16.2), mobilesubstrate, preferenceloader
+Description: Verified native right-side status-bar download/upload speed on iPad14,6 iPadOS16.1. arm64/arm64e; SpringBoard only; no floating window, game injection or restart scripts.
+Rootless: true
+Depiction: https://widmonstertony.github.io/tonyrepo/depictions/native-network-speed.html
+Homepage: https://widmonstertony.github.io/tonyrepo/
+Filename: debs/com.tony.netstatus_0.1.1_iphoneos-arm64.deb
+Size: 21908
+MD5sum: ea0c8073d583370e347432f5861b8c89
+SHA1: 2f2d4059574f062b8f5a856f964462f02500a6d9
+SHA256: a3af627b5513883f6798bbbde8b4d0a30e661d2c6703608fd05f0d16d24d7ebb
