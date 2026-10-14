@@ -76,88 +76,6 @@ SHA256: 4bb7064dd8b7d9d32831d267caa7907e0351ed890bba26b33cf361797224d014
 Depiction: https://widmonstertony.github.io/tonyrepo/depictions/virtualmac-mediaexperiencefix.html
 Homepage: https://widmonstertony.github.io/tonyrepo/
 
-Package: com.codex.clashstability
-Name: Clash Stability
-Version: 1.0.41
-Architecture: iphoneos-arm64
-Maintainer: widmonstertony
-Author: widmonstertony
-Section: Tweaks
-Depends: firmware (>= 16.0), firmware (<< 18.0), mobilesubstrate
-Conflicts: com.codex.clashstability17, com.codex.clashid16refresh
-Replaces: com.codex.clashstability17, com.codex.clashid16refresh
-Rootless: true
-Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability.html
-Description: Automatic C-source compatibility for verified iPad14,6 / iPadOS 16.1 and iPad7,2 / iPadOS 17.7.11 with CoC 18.600.7 / Dopamine 3.0.10; isolated profiles and bounded refresh/rollback.
-Filename: debs/com.codex.clashstability_1.0.41_iphoneos-arm64.deb
-Size: 88248
-MD5sum: ed55fa72c895cbe7bd7a4927566a8ba7
-SHA1: 5ef3343919ba321fa8f9a1cde16f7c4de79b1076
-SHA256: a3dbc4fa5e90a681af420d0eeb5dd22ff07d51ce16a33190579ab03ed6b9c723
-
-Package: com.codex.clashstability
-Name: Clash Stability
-Version: 1.0.57
-Architecture: iphoneos-arm64
-Maintainer: widmonstertony
-Author: widmonstertony
-Section: Tweaks
-Priority: optional
-Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate
-Replaces: com.codex.clashstability17, com.codex.clashid16refresh
-Conflicts: com.codex.clashstability17, com.codex.clashid16refresh
-Description: CoC 18.647.2 compatibility adapter for the exact verified iPadOS16.1/Dopamine3.0.11 profile. Corrects own-image worker snapshot filtering with exact identity/path and complete-set checks. No forced success, signal suppression, system daemon hooks, or reboot scripts.
-Rootless: true
-Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability.html
-Homepage: https://widmonstertony.github.io/tonyrepo/
-Filename: debs/com.codex.clashstability_1.0.57_iphoneos-arm64.deb
-Size: 88136
-MD5sum: 0ee3ff6ef89577e5ca7515b61070600b
-SHA1: f4fe1364c6ea1d0ad6ac4745cc5b501d58e71ee3
-SHA256: ee2ab013252d0fae3f03ebabe7e3de56cbcc08ac5586dd7501c115039fb278c6
-
-Package: com.codex.clashstability
-Name: Clash Stability
-Version: 1.0.58
-Architecture: iphoneos-arm64
-Maintainer: widmonstertony
-Author: widmonstertony
-Section: Tweaks
-Priority: optional
-Depends: firmware (>= 16.0), firmware (<< 17.0), mobilesubstrate
-Replaces: com.codex.clashstability17, com.codex.clashid16refresh
-Conflicts: com.codex.clashstability17, com.codex.clashid16refresh
-Description: Fingerprint-based CoC compatibility on the verified iPadOS16.1/Dopamine3.0.11 profile. Allows version-number changes only when complete protection and jailbreak file fingerprints match. Preserves existing identity, caller, snapshot and readiness checks. No restart scripts.
-Rootless: true
-Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability.html
-Homepage: https://widmonstertony.github.io/tonyrepo/
-Filename: debs/com.codex.clashstability_1.0.58_iphoneos-arm64.deb
-Size: 89110
-MD5sum: fc70e752e3aa86950a93d948f3914fca
-SHA1: f9b6647aa39f73224533889fc67075a30e4e1c95
-SHA256: 3ad5ead8cf8b9aa0bb491e5e8509b1e65bda5ca9bfd26b42b1e2c88cf616d110
-
-Package: com.codex.clashstability17
-Name: Clash Stability iPadOS 17
-Version: 1.1.0
-Architecture: iphoneos-arm64
-Maintainer: widmonstertony
-Author: widmonstertony
-Section: Tweaks
-Priority: optional
-Depends: firmware (>= 17.7.11), firmware (<< 17.7.12), mobilesubstrate
-Conflicts: com.codex.clashstability, com.codex.clashid16refresh
-Replaces: com.codex.clashstability, com.codex.clashid16refresh
-Description: Isolated fingerprint gate for iPad7,2 iPadOS17.7.11 and the known Dopamine3.0.10 file profile. No forced-success checks, system hooks or restart scripts. Unrecognized binaries fail closed.
-Rootless: true
-Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability-ios17.html
-Homepage: https://widmonstertony.github.io/tonyrepo/
-Filename: debs/com.codex.clashstability17_1.1.0_iphoneos-arm64.deb
-Size: 89020
-MD5sum: afe91e9e83774e9200894eb6812e7884
-SHA1: 37d243aba762f1158d75675bafdb2a769b183064
-SHA256: fe4712c49c21f6ef8abc23af3059dd6053b795cc588df52e196f92ef961d081b
-
 Package: com.tony.netstatus
 Name: Tony Native Network Speed
 Version: 0.1.1
@@ -252,3 +170,23 @@ Size: 12930
 MD5sum: f2f2abf60d5f4bdbfa94d626b5b93868
 SHA1: 55695612908e50e3e5c2a8690a480955ccf092b9
 SHA256: d6aa9a928e0267da7aa007e7b27ec9012a555ad5a2a3dda6d5be0b43128c2514
+
+Package: com.codex.clashstability
+Name: Clash Stability
+Version: 1.2.0
+Architecture: iphoneos-arm64
+Maintainer: widmonstertony
+Author: widmonstertony
+Section: Tweaks
+Priority: optional
+Depends: firmware (>= 16.0), firmware (<< 18.0), mobilesubstrate, coreutils
+Conflicts: com.codex.clashstability17, com.codex.clashid16refresh
+Replaces: com.codex.clashstability17, com.codex.clashid16refresh
+Description: Single installer for verified iPad14,6/16.1 and iPad7,2/17.7.11 binary profiles. Selects one unchanged accepted runtime; unknown OS/device/jailbreak files refused. Close and reopen CoC; no reboot/respring actions.
+Rootless: true
+Depiction: https://widmonstertony.github.io/tonyrepo/depictions/clash-stability.html
+Filename: debs/com.codex.clashstability_1.2.0_iphoneos-arm64.deb
+Size: 266460
+MD5sum: 75240cd5dbaff85cede30a3a7511ac16
+SHA1: 04ddbfc651990c44225d5f25186254d206fc8a59
+SHA256: 9b8a13a90b0b73b7bead956500dd63373b076403a6ecc0fbc651233cca7bcd39

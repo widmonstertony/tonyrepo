@@ -1,5 +1,6 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Clash Stability iPadOS 17</title><style>body{font-family:system-ui;max-width:760px;margin:36px auto;padding:0 20px;line-height:1.6}</style></head><body>
 <h1>Clash Stability iPadOS 17 1.1.0</h1>
+<p><strong>历史正式版归档，已由 <a href="clash-stability.html">Clash Stability 1.2.0 通用包</a>取代。请安装通用包；以下为旧版验收记录。</strong></p>
 <p>已验证：iPad7,2 / iPadOS 17.7.11 (21H461) / 已知 Dopamine 3.0.10 文件组合 / CoC 18.647.2。进入村庄与重启 SpringBoard 后重开均通过。</p>
 <p>独立于 <a href="clash-stability.html">iPadOS 16 的 1.0.58 包</a>。两包互斥，由 Sileo/Zebra 提示移除旧合并包，避免同时注入。安装后只需重开 CoC；包内无重启脚本。Choicy 允许列表需允许 ClashTraceDiagnostic。</p>
 <p>新增完整文件指纹检查：文件相同才允许版本号变化；文件发生变化则拒绝启用。精确修正自身 kind-4 image 的 worker 快照识别，保留身份、UUID、路径、完整数量和位图检查，不伪造成功、不屏蔽崩溃。</p>

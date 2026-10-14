@@ -47,22 +47,13 @@
     </section>
 
     <section class="package">
-      <h2><a href="depictions/clash-stability.html">Clash Stability 1.0.58</a></h2>
-      <p>Runtime fingerprint compatibility for iPad14,6 / iPadOS 16.1 / Dopamine 3.0.11.
-        Unchanged known files no longer require an exact CoC app-version number.
-        CoC 18.647.2 launch and relaunch verified; changed fingerprints are refused.</p>
-      <p>仅发布已验收正式包；新版不扩展 iOS 17 支持。安装后重开游戏；Choicy 允许项为
-        <strong>ClashTraceDiagnostic</strong>。1.0.57 原样保留供回退；旧版 1.0.41 保留供原兼容组合使用。</p>
-      <p><a href="https://github.com/widmonstertony/tonyrepo/tree/main/sources/clash-stability-1.0.58">New C gate and checked builder / 指纹兼容代码</a>。
-        Full original legacy C source remains unavailable.</p>
-    </section>
-
-    <section class="package">
-      <h2><a href="depictions/clash-stability-ios17.html">Clash Stability iPadOS 17 1.1.0</a></h2>
-      <p>iPad7,2 / iPadOS17.7.11 / known Dopamine3.0.10 file profile / CoC18.647.2.
-        Village launch and post-respring relaunch verified. Separate from the unchanged iOS16 package.</p>
-      <p>已验收另一台 iPad 的指纹兼容与精确自身 worker 快照修正。与旧合并包互斥，
-        安装后重开游戏；不把失败测试包、游戏二进制或原始日志发布到源。</p>
+      <h2><a href="depictions/clash-stability.html">Clash Stability 1.2.0</a></h2>
+      <p>One installer for the qualified iPad14,6 /16.1 and iPad7,2 /17.7.11 profiles.
+        Automatically selects one unchanged accepted runtime and signature. Both villages visually verified and user-tested.</p>
+      <p>两台共用同一个包，APT 只保留一个 CoC 入口。原文件指纹兼容逻辑不变；未知环境拒绝安装。
+        安装前退出 CoC，安装后重开；不需要重启 SpringBoard。Choicy 允许项仍为 <strong>ClashTraceDiagnostic</strong>。</p>
+      <p><a href="https://github.com/widmonstertony/tonyrepo/tree/main/sources/clash-stability-universal-1.2.0">Installer source and acceptance / 通用安装器源码与验收</a>。
+        Historical accepted rollback files retained; failed packages excluded. Full historical C source remains unavailable.</p>
     </section>
 
     <section class="package">

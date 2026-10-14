@@ -1,0 +1,7 @@
+case "${1:-}" in
+    install|upgrade)
+        select_profile || exit 1
+        echo "Clash Stability: verified $profile profile. No reboot/respring."
+        ;;
+esac
+exit 0

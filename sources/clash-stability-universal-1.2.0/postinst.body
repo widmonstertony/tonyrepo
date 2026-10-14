@@ -1,0 +1,16 @@
+[ "${1:-}" = configure ] || exit 0
+select_profile || exit 1
+source=/var/jb/usr/share/clash-stability/profiles/$profile.dylib
+target=/var/jb/usr/lib/TweakInject/ClashTraceDiagnostic.dylib
+printf '%s  %s\n' "$payload_sha" "$source" | /var/jb/usr/bin/sha256sum -c - || exit 1
+[ ! -L "$target" ] || { echo 'Unexpected target symlink; refusing.' >&2; exit 1; }
+temporary=$(/var/jb/usr/bin/mktemp /var/jb/usr/lib/TweakInject/.clash-profile.XXXXXXXX) || exit 1
+trap '/var/jb/usr/bin/rm -f -- "$temporary"' EXIT HUP INT TERM
+/var/jb/usr/bin/cp -- "$source" "$temporary" || exit 1
+/var/jb/usr/bin/chmod 0644 "$temporary" || exit 1
+printf '%s  %s\n' "$payload_sha" "$temporary" | /var/jb/usr/bin/sha256sum -c - || exit 1
+/var/jb/usr/bin/mv -f -- "$temporary" "$target" || exit 1
+trap - EXIT HUP INT TERM
+echo "Clash Stability: $profile selected; original verified payload and signature preserved."
+echo 'Close and reopen CoC. No SpringBoard restart required. 请退出并重新打开 CoC，无需重启 SpringBoard。'
+exit 0

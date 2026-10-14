@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-14",
+  "package": "com.codex.clashstability",
+  "version": "1.2.0",
+  "package_sha256": "9b8a13a90b0b73b7bead956500dd63373b076403a6ecc0fbc651233cca7bcd39",
+  "package_size": 266460,
+  "single_injectable_dylib_and_original_filter": true,
+  "both_profile_payloads_and_signatures_byte_identical_to_previous_releases": true,
+  "new_runtime_code_or_loader": false,
+  "restart_performed": false,
+  "game_files_or_choicy_changed": false,
+  "other_tweak_packages_changed": false,
+  "devices": [
+    {
+      "model": "iPad7,2",
+      "os": "17.7.11",
+      "build": "21H461",
+      "selected_profile": "ios17",
+      "payload_sha256": "af5aa166f22195bcc362375cdd3bed3803c16c216c22db3c017557665d47a44e",
+      "original_payload_unchanged": true,
+      "village_visually_verified": true,
+      "cold_relaunch_rendered_village_then_shared_account_conflict": true,
+      "session_conflict_popup_not_automatically_dismissed": true,
+      "user_confirmed_working": true,
+      "springboard_pid_before_and_after": 45207
+    },
+    {
+      "model": "iPad14,6",
+      "os": "16.1",
+      "build": "20B82",
+      "selected_profile": "ios16",
+      "payload_sha256": "d9dbc5299c92274bc6160ef1666678843d06ee24bf783a6344d97e4ec01a634f",
+      "original_payload_unchanged": true,
+      "village_visually_verified": true,
+      "additional_cold_relaunch_by_agent": false,
+      "user_confirmed_working": true,
+      "springboard_pid_before_and_after": 11192,
+      "virtual_mac_app_pid_before_and_after": 18994,
+      "virtual_machine_pid_before_and_after": 37115,
+      "returned_to_virtual_mac_after_visual_check": true
+    }
+  ],
+  "user_confirmation": "Both devices are working; user manually tested both.",
+  "offline_tests": [
+    "Exact previous DEB/payload/filter fingerprints",
+    "Deterministic archive with required directory entries",
+    "Original maintainer-script text exercised with redirected fixtures",
+    "Correct selection for both qualified model/build pairs",
+    "Unknown device/build and changed jailbreak fingerprints refused",
+    "One-byte payload corruption refused before replacement",
+    "No leaked temporary profile file, restart commands or finish actions"
+  ],
+  "first_candidate_directory_omission": "dpkg unpack failed; original iOS17 release immediately restored without restart; archive corrected and successfully installed. Failed candidate excluded from publication.",
+  "scope": "Observed current CoC village rendering on both devices plus user manual confirmation. Not proof of all future app/OS/jailbreak versions or indefinite stability. No independent additional iOS16 cold relaunch is claimed."
+}

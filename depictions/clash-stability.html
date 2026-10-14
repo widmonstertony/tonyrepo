@@ -1,46 +1,17 @@
-<!doctype html>
-<html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clash Stability</title>
-<style>:root{color-scheme:light dark;font-family:-apple-system,BlinkMacSystemFont,sans-serif}body{max-width:760px;margin:auto;padding:18px;line-height:1.6}.note{border-left:4px solid #316dca;padding-left:12px}code{overflow-wrap:anywhere}</style>
-</head><body>
-<h1>Clash Stability 1.0.58</h1>
-<p>修复当前已验证组合：<strong>CoC 18.647.2、iPad14,6、iPadOS 16.1 (20B82)、Dopamine 3.0.11</strong>。
-这个新版不宣称支持其他系统或 iOS 17。保留旧版 1.0.41 APT 条目供原兼容组合使用。</p>
-<h2>安装与验收</h2>
-<p class="note">退出 CoC，更新插件，再打开游戏。Choicy 自定义允许列表需允许
-<strong>ClashTraceDiagnostic</strong>。DEB 没有重启或 respring 安装脚本；不需要退出越狱、
-清除游戏数据或重启设备。卸载后重新打开游戏即可移除注入。</p>
-<p>已实际进入村庄，结束游戏后重新进入村庄，返回虚拟 Mac 后同一进程观察存活至三分十九秒。
-此为当前组合的验收，不是永久稳定性或未来所有版本兼容的保证。</p>
-<h2>此次修复与代码</h2>
-<p>更新精确越狱环境指纹，并补全工作线程快照对插件自身图像的精确过滤集合；
-保留身份、路径、UUID、调用位置和快照一致性校验。没有强制检查成功、屏蔽致命信号、
-全局修改 dyld 图像列表或钩住系统守护进程。正式包不含临时诊断观察器。</p>
-<p><a href="https://github.com/widmonstertony/tonyrepo/tree/main/sources/clash-stability-1.0.58">新增 C 指纹函数、适配代码和验收记录</a>。
-完整旧 C 源码仍未找回；新增函数在已验证 1.0.57 基础上接入三个启动入口。</p>
-<p><a href="../debs/com.codex.clashstability_1.0.58_iphoneos-arm64.deb">下载正式 1.0.58 DEB</a> ·
-<a href="../debs/com.codex.clashstability_1.0.57_iphoneos-arm64.deb">1.0.57 回退包（未改动）</a>。</p>
-<h2>以后更新游戏</h2>
-<p>1.0.58 已用完整文件指纹取代三个版本号比较：已知 magicx 防护文件、systemhook 和生成的 dyld
-完全不变时，不再仅因 CoC 版本号变化拒绝加载。文件变了、读取失败或环境不匹配则拒绝启用，
-不猜偏移、不强制成功。其他原有身份和一致性校验保留。独立实机测试已确认：已知文件通过，
-同大小但改了一个字节的副本被拒绝；真实游戏文件未修改。</p>
-<p>尚未测试未来实际游戏版本；其他游戏代码变化仍可能引入不同问题，不能保证所有更新都无需适配。</p>
-<h2>旧版 1.0.41</h2>
-<p>原验证组合为 CoC 18.600.7 / Dopamine 3.0.10，以及 iPad14,6 / iPadOS 16.1 (20B82)
-或 iPad7,2 / iPadOS 17.7.11 (21H461)。新版 1.0.57 的结果不能视为旧 iOS 17 组合的重新验收。</p>
-<hr><h2>English</h2>
-<p>1.0.58 is regression-tested with CoC 18.647.2, iPad14,6, iPadOS 16.1 (20B82), Dopamine 3.0.11.
-It refreshes exact environment fingerprints and corrects qualified own-image worker snapshot filtering.
-No forced success, signal suppression, global dyld-list edits or system-daemon hooks are added.</p>
-<p>Close CoC, install, reopen. Allow <strong>ClashTraceDiagnostic</strong> in a custom Choicy allowlist.
-No reboot/respring scripts are included. Village entry and relaunch were visually verified;
-the same process was observed alive at 199 seconds after returning to Virtual Mac, not tested indefinitely.</p>
-<p>The new original C runtime gate checks full known protection/jailbreak file fingerprints instead of the app-version number
-at three call sites. Changed or unreadable files are refused. Known files passed a standalone device check;
-a same-size one-byte-altered copy was refused. Real game files were not modified.</p>
-<p>No future real game version was tested. Other game changes can still break compatibility.
-The full legacy C implementation remains unavailable. The unmodified 1.0.57 rollback package
-and legacy 1.0.41 APT entry stay available.</p>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Clash Stability 1.2.0</title><style>body{font-family:system-ui;max-width:760px;margin:36px auto;padding:0 20px;line-height:1.6}code{overflow-wrap:anywhere}</style></head><body>
+<h1>Clash Stability 1.2.0 — 通用安装包</h1>
+<p>两台 iPad 共用一个 <code>com.codex.clashstability</code> 包。安装时核对型号、系统构建和完整越狱文件散列，选择一份原样保留程序与签名的已验收版本，不同时加载两套钩子。</p>
+<ul><li>iPad14,6 / 16.1 (20B82) / 已知 Dopamine 3.0.11 文件组合：原 1.0.58。</li><li>iPad7,2 / 17.7.11 (21H461) / 已知 Dopamine 3.0.10 文件组合：原 1.1.0。</li></ul>
+<p>本次安装后两台均实际看到 CoC 18.647.2 村庄，用户也确认手动测试正常。未重启 SpringBoard、设备或退出越狱；虚拟 Mac 与虚拟机进程保持不变。</p>
+<h2>安装与迁移</h2>
+<p>退出 CoC，安装本包，再打开游戏。旧 iOS16 包直接升级；旧 iOS17 包与本包互斥，Sileo 迁移需确认移除旧包。Choicy 允许列表仍允许 <strong>ClashTraceDiagnostic</strong>。无需重启 SpringBoard，没有重启命令或完成动作。</p>
+<p>只注入一份原始程序及原 filter。只读副本位于非注入目录；安装器检查完整散列后原子选择。未知型号、构建或越狱文件拒绝安装；异常中断的安装须先重新配置完成。</p>
+<h2>代码与回退</h2>
+<p><a href="https://github.com/widmonstertony/tonyrepo/tree/main/sources/clash-stability-universal-1.2.0">通用安装器源码、测试与验收</a> · <a href="../debs/com.codex.clashstability_1.2.0_iphoneos-arm64.deb">正式 1.2.0 DEB</a>。</p>
+<p>完整旧 C 源码仍未找回；原 C 指纹函数与基线适配代码保留在仓库对应目录。APT 只留一个 CoC 入口，旧正式文件保留供回退：<a href="../debs/com.codex.clashstability_1.0.58_iphoneos-arm64.deb">iOS16 原版</a> · <a href="../debs/com.codex.clashstability17_1.1.0_iphoneos-arm64.deb">iOS17 原版</a>。回退前先移除当前互斥包。</p>
+<p><a href="clash-stability-legacy-ios16.html">历史 iOS16 验收</a> · <a href="clash-stability-ios17.html">历史 iOS17 验收</a>。</p>
+<p>原指纹兼容逻辑保留：已知文件完全不变时不受版本号变化限制，文件改变则拒绝启用。不保证所有未来游戏更新、其他设备环境、账号安全或永久稳定。</p>
+<h2>English</h2>
+<p>One installer selects exactly one unchanged accepted runtime for iPad14,6/16.1/20B82 or iPad7,2/17.7.11/21H461, with full known jailbreak-file fingerprints. No new runtime loader or hooks; signatures preserved. CoC18.647.2 village rendering was visually checked on both devices and the user confirmed both working.</p>
+<p>Close CoC, install, reopen. Allow ClashTraceDiagnostic in Choicy. The old iOS16 ID upgrades; the old iOS17 ID is replaced with confirmation. No respring/reboot or game/config changes. Unknown profiles refused. Historical accepted rollback files remain; only one active CoC APT entry. Full legacy C source remains unavailable; no blanket future compatibility is claimed.</p>
 </body></html>
