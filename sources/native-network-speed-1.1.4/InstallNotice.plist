@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0"><dict><key>entry</key><dict>
+<key>cell</key><string>PSTitleValueCell</string>
+<key>label</key><string>网速更新后请手动重启 SpringBoard</string>
+</dict></dict></plist>

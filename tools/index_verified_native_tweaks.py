@@ -19,7 +19,7 @@ sys.path.insert(0,str(ROOT/'sources/native-network-speed-1.1.0'))
 from test_release import deb_members
 
 RELEASES=[
-    ('com.tony.netstatus','1.1.3','e855a4b3699d666bd807178766467a44aac38e82fd68be718230f6f252b6c4fa','native-network-speed.html'),
+    ('com.tony.netstatus','1.1.4','0b882adf3453d820bf27384a8b4bcd34e570f326f20e1780a873eef5a43e894c','native-network-speed.html'),
     ('com.tony.reversevolume','1.0.1','d6aa9a928e0267da7aa007e7b27ec9012a555ad5a2a3dda6d5be0b43128c2514','reverse-volume.html')]
 
 def main():
@@ -30,7 +30,11 @@ def main():
         assert hashlib.sha256(data).hexdigest()==accepted, 'Not the accepted DEB'
         members=deb_members(data)
         with tarfile.open(fileobj=io.BytesIO(members['control.tar.gz'])) as control:
-            assert [x.name for x in control]==['./control'], 'Unexpected maintainer script'
+            expected=['./control','./postinst'] if package=='com.tony.netstatus' and version=='1.1.4' else ['./control']
+            assert [x.name for x in control]==expected, 'Unexpected maintainer script'
+            if len(expected)==2:
+                assert control.getmember('./postinst').mode==0o755
+                assert control.extractfile('./postinst').read()==(ROOT/'sources/native-network-speed-1.1.4/postinst').read_bytes()
             text=control.extractfile('./control').read().decode().strip()
         fields=dict(line.split(': ',1) for line in text.splitlines())
         assert fields['Package']==package and fields['Version']==version

@@ -1,0 +1,14 @@
+#!/bin/sh
+# Notice only. Do not send a GUI finish action: Sileo AutoComplete may execute it.
+case "${1:-}" in
+    configure)
+        printf '%s\n' \
+            'Tony Native Network Speed: 安装完成 / Installation complete.' \
+            '安装或更新后请自行确认并手动重启 SpringBoard；本包不会自动重启。' \
+            'After installing or updating, manually restart SpringBoard when you are ready. This package never restarts it automatically.' \
+            '如果此 iPad 正运行虚拟 Mac，请先保存并关闭虚拟 Mac，再进行重启。' \
+            'If this iPad hosts a virtual Mac, save your work and close the VM before restarting SpringBoard.' \
+            '无需重启整台 iPad 或退出越狱 / No full device reboot or leaving jailbreak mode is required.'
+        ;;
+esac
+exit 0
