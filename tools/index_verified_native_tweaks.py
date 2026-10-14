@@ -19,7 +19,7 @@ sys.path.insert(0,str(ROOT/'sources/native-network-speed-1.1.0'))
 from test_release import deb_members
 
 RELEASES=[
-    ('com.tony.netstatus','1.1.0','287db665f2b6875ec8a2637cceb6ecf07356c14cfe025a07efd2337ab3a01d31','native-network-speed.html'),
+    ('com.tony.netstatus','1.1.3','e855a4b3699d666bd807178766467a44aac38e82fd68be718230f6f252b6c4fa','native-network-speed.html'),
     ('com.tony.reversevolume','1.0.1','d6aa9a928e0267da7aa007e7b27ec9012a555ad5a2a3dda6d5be0b43128c2514','reverse-volume.html')]
 
 def main():

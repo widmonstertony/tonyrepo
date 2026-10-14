@@ -196,6 +196,26 @@ MD5sum: 8947b9a67e2ab820061a8a1c817b5103
 SHA1: 27384e5ef6a25d648ed5a3785778cf44d8f55a8b
 SHA256: 287db665f2b6875ec8a2637cceb6ecf07356c14cfe025a07efd2337ab3a01d31
 
+Package: com.tony.netstatus
+Name: Tony Native Network Speed
+Version: 1.1.3
+Architecture: iphoneos-arm64
+Maintainer: widmonstertony
+Author: widmonstertony
+Section: Tweaks
+Depends: firmware (>= 16.1), firmware (<< 18.0), mobilesubstrate, preferenceloader
+Conflicts: com.tony.netstatus17
+Replaces: com.tony.netstatus17
+Provides: com.tony.netstatus17 (= 1.1.3)
+Description: One live outer-system-status-bar network label. Same package and binary selects qualified iPad14,6 iPadOS16.1 or iPad7,2 iPadOS17.7.11 at runtime; unsupported devices remain inactive. Clears native icons and excludes embedded app windows. SpringBoard only; no volume/game hooks or restart scripts.
+Rootless: true
+Depiction: https://widmonstertony.github.io/tonyrepo/depictions/native-network-speed.html
+Filename: debs/com.tony.netstatus_1.1.3_iphoneos-arm64.deb
+Size: 37644
+MD5sum: 283aed017eca323ce9d15d990ae7ea41
+SHA1: c4536f9f147f1496ca098397da8b6e3b86608e72
+SHA256: e855a4b3699d666bd807178766467a44aac38e82fd68be718230f6f252b6c4fa
+
 Package: com.tony.reversevolume
 Name: Tony Reverse Volume Keys
 Version: 1.0.1
