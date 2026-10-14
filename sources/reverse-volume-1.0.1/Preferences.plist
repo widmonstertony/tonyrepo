@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0"><dict><key>entry</key><dict>
+<key>cell</key><string>PSSwitchCell</string>
+<key>label</key><string>反转实体音量键 / Reverse volume keys</string>
+<key>defaults</key><string>com.tony.reversevolume</string>
+<key>key</key><string>Enabled</string><key>default</key><true/>
+<key>PostNotification</key><string>com.tony.reversevolume/changed</string>
+</dict></dict></plist>

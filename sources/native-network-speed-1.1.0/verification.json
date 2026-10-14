@@ -1,0 +1,39 @@
+{
+  "package_path": "debs/com.tony.netstatus_1.1.0_iphoneos-arm64.deb",
+  "package_id": "com.tony.netstatus",
+  "version": "1.1.0",
+  "package_sha256": "287db665f2b6875ec8a2637cceb6ecf07356c14cfe025a07efd2337ab3a01d31",
+  "payload_sha256": "4bf709702f6d70f0b892da97fb438bc469cd5bd75189abdccf4aedccde59d8c2",
+  "acceptance_date": "2026-10-13",
+  "same_signed_payload_installed_and_running_on_both": true,
+  "scope": "SpringBoard outer main-screen native status bar only",
+  "ipad7_2_17_7_11": {
+    "runtime_profile": 17,
+    "sequences_observed": [15,45,100,150],
+    "failed_samples": 0,
+    "live_label_count": 1,
+    "native_gap_points": 7,
+    "embedded_app_bar_has_label": false,
+    "visible_rate_examples": ["181K", "143K", "idle 1K/0K"],
+    "controlled_transfer": "4 MiB at 128 KiB/s to device service",
+    "visual_checks": ["Home", "Settings Stage Manager", "CoC actual village Stage Manager"],
+    "coc_adapter_unchanged": "com.codex.clashstability17 1.1.0",
+    "separate_volume_adapter_unchanged": "com.tony.reversevolume 1.0.1",
+    "new_coc_crash_reports_observed": false
+  },
+  "ipad14_6_16_1": {
+    "runtime_profile": 16,
+    "sequences_observed": [320,350,370],
+    "failed_samples": 0,
+    "live_label_count": 1,
+    "native_gap_points": 7,
+    "embedded_and_reuse_bar_has_label": false,
+    "visible_rate_examples": ["46K/11K", "idle 0K/1K"],
+    "visual_checks": ["Hosted macOS VM in Stage Manager; outer label only, native icon clearance"],
+    "coc_adapter_unchanged": "com.codex.clashstability 1.0.58",
+    "coc_relaunch": "Not performed: this iPad hosts the running macOS work environment; no unsupported claim of post-restart village validation",
+    "new_coc_or_springboard_crash_reports_observed": false
+  },
+  "offline_checks": ["arm64 and arm64e Werror build", "four ASan/UBSan fixtures", "device-signed versus compiled code/data section match in both slices", "three payload files", "SpringBoard-only filter", "no scripts", "no game or volume hooks"],
+  "limitations": ["Only these exact model/OS combinations qualified", "All other device/OS profiles inactive", "No exhaustive all-app or all-orientation test", "Full-screen apps hiding the native system bar also hide this label", "Rates below 1 KiB/s display 0K", "Volume reversal is a separate package, not included"]
+}

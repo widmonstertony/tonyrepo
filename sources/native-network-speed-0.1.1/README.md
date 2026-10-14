@@ -1,5 +1,11 @@
 # Tony Native Network Speed 0.1.1 — iPadOS 16
 
+Legacy: superseded by [1.1.0](../native-network-speed-1.1.0/README.md). Later use
+exposed stale-rate parsing and embedded status-bar duplication issues. Retained
+for history, not recommended for installation or rollback.
+
+历史版本：后续发现冻结和窗口重复问题，请使用 1.1.0，不建议安装或回退此版。
+
 Original Objective-C source and standalone builder for the verified
 iPad14,6 / iPadOS 16.1 native right-side status-bar patch. It displays
 download/upload bytes per second before the existing Wi-Fi/battery area.

@@ -1,0 +1,37 @@
+{
+  "package_path": "debs/com.tony.reversevolume_1.0.1_iphoneos-arm64.deb",
+  "package_sha256": "d6aa9a928e0267da7aa007e7b27ec9012a555ad5a2a3dda6d5be0b43128c2514",
+  "payload_sha256": "84888c4fcd082d75ca798cbc16156f36707c88a130125b5c9d2d8131fa0963f4",
+  "package_id": "com.tony.reversevolume",
+  "version": "1.0.1",
+  "model": "iPad7,2",
+  "os": "17.7.11",
+  "acceptance_date": "2026-10-13",
+  "scope": "SpringBoard hardware-volume button actions only",
+  "orientation_source": "main-screen SBStatusBarWindow full-window geometry",
+  "automated_landscape_left": {
+    "outer_width": 1366,
+    "outer_height": 1024,
+    "baseline_volume": 0.25,
+    "volume_after_up_event": 0.1875,
+    "up_input_increase": true,
+    "up_forwarded_increase": false,
+    "volume_after_down_event": 0.25,
+    "down_input_increase": false,
+    "down_forwarded_increase": true,
+    "pretest_volume_restored": 0.5625
+  },
+  "human_confirmation": {
+    "user_report": "都通过了我验证了",
+    "context": "requested landscape reversal and portrait normal behavior",
+    "requested_physical_behavior_confirmed_by_user": true
+  },
+  "portrait_automated_test": "not performed; human confirmation recorded separately",
+  "opposite_landscape_test": "not separately verified",
+  "native_fixed_volume_arrangement_preserved": true,
+  "network_package_unchanged": "com.tony.netstatus17 1.0.3",
+  "coc_package_unchanged": "com.codex.clashstability17 1.1.0",
+  "new_coc_crash_reports_observed": false,
+  "checks": ["arm64+arm64e -Werror compile", "ASan/UBSan geometry fixtures", "signed source-code/data section match", "SpringBoard-only filter", "no restart scripts", "no game injection or audio-session override"],
+  "limitations": ["Only this model/OS combination qualified", "Portrait result is user-reported; opposite landscape not separately verified", "Direct volume sliders and Siri are not reversed"]
+}
