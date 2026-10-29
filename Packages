@@ -1,6 +1,6 @@
 Package: local.pogo.go-info
 Name: GO 信息显示
-Version: 0.3.2
+Version: 0.4.0
 Architecture: iphoneos-arm64
 Maintainer: widmonstertony
 Author: Tony Tan
@@ -10,15 +10,15 @@ Rootless: true
 Depends: ellekit (>= 1.2), preferenceloader (>= 2.2.8), firmware (>= 15.0), launchctl
 Depiction: https://widmonstertony.github.io/tonyrepo/depictions/go-info.html
 Homepage: https://widmonstertony.github.io/tonyrepo/
-Description: GO Info preview for Pokemon GO 0.431.1: toggleable IV display, in-game Discord, confirmed per-app positioning, routes, speed controls, joystick and GPX import.
- Requires the matching UnityFramework build; other versions are not supported.
- IV verified on iPadOS 16.1. In-game positioning validation is pending.
+Description: GO Info preview: runtime-validated IV display, in-game Discord, confirmed per-app positioning, routes, speed controls, joystick and GPX import.
+ Finds IV interfaces by runtime types and signatures without game-version or UUID allowlists.
+ Missing or ambiguous interfaces are disabled. In-game positioning validation is pending.
  Does not fix game startup crashes or repackage the original app.
-Filename: debs/local.pogo.go-info_0.3.2_iphoneos-arm64.deb
-Size: 92552
-MD5sum: 9c8e3a89e90d58db968d7bc417a4903d
-SHA1: 068eb55455c5d52f5af332def0c0d4e13e7d2892
-SHA256: deb3f7dd3475fddb7c025c4b381df659e18d0eef69f6c05f99ba2444dbac0b0c
+Filename: debs/local.pogo.go-info_0.4.0_iphoneos-arm64.deb
+Size: 94122
+MD5sum: 45178fd90b6d331f5fd81e4e06c1feb1
+SHA1: 30dc70ce22bc5987d81923b4c1280697e856f0b1
+SHA256: e8e8d1fa5fa2156121650af2b3ae70a5f180c1b0cd37a657689cd9b256b9e276
 
 Package: com.codex.thermalcontrol
 Name: ThermalLightControl
